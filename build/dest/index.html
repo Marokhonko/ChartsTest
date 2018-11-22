@@ -1,0 +1,202 @@
+<!--	links-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FractalChart</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<aside class="sidebar"></aside>
+		<div class="wrapper__right">
+			<header class="header">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-3">
+							<h1>Driver's Details</h1>
+						</div>
+						<div class="col-3">
+							<div class="dropdown">
+								<button class="btn dropdown-toggle header-dropdown" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unit Size, EQ/Unit</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Unit Size, EQ/Unit</a>
+									<a class="dropdown-item" href="#">Unit Size, EQ/Unit</a>
+									<a class="dropdown-item" href="#">Unit Size, EQ/Unit</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 offset-2 align-self-end">
+							<div class="details-veiw">
+								<a href="#">
+									<span>Click the row to view details</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="table-holder col-12 col-md-12">
+							<table class="table table-sm table-bordered">
+								<thead>
+									<tr>
+										<th scope="col">Fact</th>
+										<th scope="col">Metric</th>
+										<th scope="col">2013</th>
+										<th scope="col">2014</th>
+										<th scope="col">2015Q</th>
+										<th scope="col">2016Q</th>
+										<th scope="col">2017F</th>
+										<th scope="col">2018F</th>
+										<th scope="col">CAGR 13/15</th>
+										<th scope="col">CAGR 15/18</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="left" scope="row">Unit Size</th>
+										<td>EQ/unit</td>
+										<td>103.9</td>
+										<td>53</td>
+										<td>13.170</td>
+										<td>13.170</td>
+										<td>0.17</td>
+										<td>49.998</td>
+										<td>0.1%</td>
+										<td>4.16%</td>
+									</tr>
+									<tr>
+										<th class="left ml blue black" scope="row">Unit Size - Large Packs</th>
+										<td>EQ/unit</td>
+										<td>110.3</td>
+										<td>54</td>
+										<td>12.682</td>
+										<td>12.682</td>
+										<td>0.166</td>
+										<td>82.165</td>
+										<td>0.18%</td>
+										<td>4.74%</td>
+									</tr>
+									<tr>
+										<th class="left ml" scope="row">Unit Size - Medium Packs</th>
+										<td>EQ/unit</td>
+										<td>115.2</td>
+										<td>55</td>
+										<td>12.240</td>
+										<td>12.240</td>
+										<td>0.163</td>
+										<td>62.167</td>
+										<td>4.74%</td>
+										<td>4.57%</td>
+									</tr>
+									<tr>
+										<th class="left black" scope="row">Unit Size - Small Packs</th>
+										<td>EQ/unit</td>
+										<td>121.7</td>
+										<td>56</td>
+										<td>11.776</td>
+										<td>11.776</td>
+										<td>0.16</td>
+										<td>69.416</td>
+										<td>2.62%</td>
+										<td>4.68%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1">
+							<div class="chart-title">
+								<div class="chart-title-text">Sub-driver’s dynamic</div>
+							</div>
+						</div>
+						<div class="col-8">
+							<div id="container" style=" height:250px;"></div>
+							<div class="under-chart">
+								<span class="under-i orange">-4%</span>
+								<span class="under-i ui">+11%</span>
+								<span class="under-i ui">+11%</span>
+								<span class="under-i ui">+5%</span>
+								<span class="under-i ui">+4%</span>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="aside-chart">
+								<div class="text">Growth
+									<br>(CAGR)</div>
+								<div class="info">
+									<div class="left-info-block">
+										<div class="top-i">13/15</div>
+										<div class="border-o"></div>
+										<div class="bott-i">-4%</div>
+									</div>
+									<div class="right-info-block">
+										<div class="top-i-g">15/18F</div>
+										<div class="border-g"></div>
+										<div class="bott-i">+11%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hr"></div>
+					<div class="row">
+						<div class="col-1">
+							<div class="chart-title">
+								<div class="chart-title-text">Sub-driver’s dynamic</div>
+							</div>
+						</div>
+						<div class="col-8 chart-top">
+							<div id="container2" style=" height:250px;"></div>
+							<div class="under-chart">
+								<span class="under-i orange">-4%</span>
+								<span class="under-i ui">+11%</span>
+								<span class="under-i ui">+11%</span>
+								<span class="under-i ui">+5%</span>
+								<span class="under-i ui">+4%</span>
+							</div>
+						</div>
+						<div class="col-3 chart-top">
+							<div class="aside-chart">
+								<div class="text">Change</div>
+								<div class="info">
+									<div class="left-info-block">
+										<div class="top-i">13/15</div>
+										<div class="border-o"></div>
+										<div class="bott-i">-4%</div>
+									</div>
+									<div class="right-info-block">
+										<div class="top-i-g">15/18F</div>
+										<div class="border-g"></div>
+										<div class="bott-i">+11%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--block after-content-->
+			<footer class="footer"></footer>
+		</div>
+	</div>
+	<script src="vendor/jquery.min.js"></script>
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/data.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="js/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.header {
+  margin: 10px 0 20px 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  height: 40px;
+
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header-dropdown {
+    width: 170px;
+    padding: 3px;
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;
+  }
+}
+
+.dropdown-menu.show {
+  width: 170px !important;
+}
+
+.dropdown-item  {
+  padding: 5px 0 5px 0   !important;
+  text-align: center !important;
+}
+
+.details-veiw {
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #9b9fa3;
+}
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+

@@ -1,0 +1,46 @@
+//- template page
+//	links
+- var css = "css/";
+- var js = "js/";
+- var vendor = "vendor/"
+
+
+block local-vars
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title FractalChart
+			block title
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+		block styles
+
+		link(rel="stylesheet", href=css + "main.css")
+		link(rel = "stylesheet", href= vendor + "bootstrap/css/bootstrap.min.css")
+			
+	body
+		.wrapper
+			include blocks/sidebar/sidebar
+			.wrapper__right
+				include blocks/header/header
+
+				block content
+
+				//block after-content
+
+				include blocks/footer/footer
+
+
+		block scripts
+		script(src=vendor + "jquery.min.js")
+		script(src = "https://unpkg.com/popper.js/dist/umd/popper.min.js")
+		script(src=vendor + "bootstrap/js/bootstrap.min.js")
+		script(src='https://code.highcharts.com/highcharts.js')
+		script(src='https://code.highcharts.com/modules/data.js')
+		script(src='https://code.highcharts.com/modules/exporting.js')
+		script(src='https://code.highcharts.com/modules/export-data.js')
+		script(src=js + "js.js")
